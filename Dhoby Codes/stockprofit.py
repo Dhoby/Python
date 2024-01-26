@@ -1,4 +1,4 @@
-BUY = input("what is the initial price? 18.6 for myself\n") 
+BUY = input("what is the initial price? 18.61 for myself\n") 
 ORI = float (BUY)* 500
 COM_INI = max (ORI * 2.5 / 10000, 5)
 GUOHU_INI = ORI * 0.01 / 1000
