@@ -22,15 +22,15 @@ if CHOICE == "1":
     print ("电科网安 net profit is: " + '%.2f'%Profit1)
 
 if CHOICE == "2":
-    ORI = 49.1 * 200
+    ORI = 48.045 * 400
     COM_INI = max (ORI * 2.5 / 10000, 5)
     GUOHU_INI = ORI * 0.01 / 1000
 
     PRICE = input ("同仁堂现价?\n")
-    COM_SOLD = max (float (PRICE) * 200 * 2.5 / 10000, 5)
-    GUOHU_SOLD = float (PRICE) * 200 * 0.01 / 1000
-    STAMP = float (PRICE) * 200 * 0.05 / 100
-    Profit2 = float (PRICE) * 200 - ORI - COM_INI - COM_SOLD - GUOHU_INI - GUOHU_SOLD - STAMP
+    COM_SOLD = max (float (PRICE) * 400 * 2.5 / 10000, 5)
+    GUOHU_SOLD = float (PRICE) * 400 * 0.01 / 1000
+    STAMP = float (PRICE) * 400 * 0.05 / 100
+    Profit2 = float (PRICE) * 400 - ORI - COM_INI - COM_SOLD - GUOHU_INI - GUOHU_SOLD - STAMP
 
     COST2 = COM_INI + COM_SOLD + GUOHU_INI + GUOHU_SOLD + STAMP
     print ("同仁堂 total cost is: " + '%.2f'%COST2)
@@ -57,17 +57,18 @@ if CHOICE == "3":
     print ("电科网安 net profit is: " + '%.2f'%Profit1)
 
 
-    ORI = 49.1 * 200
+   ORI = 48.045 * 400
     COM_INI = max (ORI * 2.5 / 10000, 5)
     GUOHU_INI = ORI * 0.01 / 1000
 
     PRICE = input ("同仁堂现价?\n")
-    COM_SOLD = max (float (PRICE) * 200 * 2.5 / 10000, 5)
-    GUOHU_SOLD = float (PRICE) * 200 * 0.01 / 1000
-    STAMP = float (PRICE) * 200 * 0.05 / 100
-    Profit2 = float (PRICE) * 200 - ORI - COM_INI - COM_SOLD - GUOHU_INI - GUOHU_SOLD - STAMP
+    COM_SOLD = max (float (PRICE) * 400 * 2.5 / 10000, 5)
+    GUOHU_SOLD = float (PRICE) * 400 * 0.01 / 1000
+    STAMP = float (PRICE) * 400 * 0.05 / 100
+    Profit2 = float (PRICE) * 400 - ORI - COM_INI - COM_SOLD - GUOHU_INI - GUOHU_SOLD - STAMP
 
     COST2 = COM_INI + COM_SOLD + GUOHU_INI + GUOHU_SOLD + STAMP
+
     print ("同仁堂 total cost is: " + '%.2f'%COST2)
 
     print ("同仁堂 net profit is: " + '%.2f'%Profit2)
