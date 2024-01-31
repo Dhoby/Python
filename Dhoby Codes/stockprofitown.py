@@ -1,6 +1,7 @@
 
 
 CURRENT_STOCKS = ["1电科网安","2同仁堂", "3工商银行"]
+print CURRENT_STOCKS
 
 CHOICE = input ("请选择查询的股票\n")
 
@@ -73,7 +74,7 @@ if CHOICE == "4":
     print ("电科网安 net profit is: " + '%.2f'%Profit1)
 
 
-   ORI = 48.045 * 400
+    ORI = 48.045 * 400
     COM_INI = max (ORI * 2.5 / 10000, 5)
     GUOHU_INI = ORI * 0.01 / 1000
 
