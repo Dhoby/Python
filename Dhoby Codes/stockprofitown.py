@@ -1,6 +1,6 @@
 
 
-CURRENT_STOCKS = ["1电科网安","2同仁堂"]
+CURRENT_STOCKS = ["1电科网安","2同仁堂", "3工商银行"]
 
 CHOICE = input ("请选择查询的股票\n")
 
@@ -37,9 +37,25 @@ if CHOICE == "2":
 
     print ("同仁堂 net profit is: " + '%.2f'%Profit2)
 
+if CHOICE == "3":
+
+    ORI = 5.15 * 2200
+    COM_INI = max (ORI * 2.5 / 10000, 5)
+    GUOHU_INI = ORI * 0.01 / 1000
+
+    PRICE = input ("工商银行现价?\n")
+    COM_SOLD = max (float (PRICE) * 2200 * 2.5 / 10000, 5)
+    GUOHU_SOLD = float (PRICE) * 2200 * 0.01 / 1000
+    STAMP = float (PRICE) * 2200 * 0.05 / 100
+    Profit3 = float (PRICE) * 2200 - ORI - COM_INI - COM_SOLD - GUOHU_INI - GUOHU_SOLD - STAMP
+
+    COST1 = COM_INI + COM_SOLD + GUOHU_INI + GUOHU_SOLD + STAMP
+    print ("工商银行 total cost is: " + '%.2f'%COST1)
+
+    print ("工商银行 net profit is: " + '%.2f'%Profit3)
     
 
-if CHOICE == "3":
+if CHOICE == "4":
 
     ORI = 18.61 * 500
     COM_INI = max (ORI * 2.5 / 10000, 5)
@@ -73,7 +89,24 @@ if CHOICE == "3":
 
     print ("同仁堂 net profit is: " + '%.2f'%Profit2)
 
-    Profit = Profit1 + Profit2
+
+    ORI = 5.15 * 2200
+    COM_INI = max (ORI * 2.5 / 10000, 5)
+    GUOHU_INI = ORI * 0.01 / 1000
+
+    PRICE = input ("工商银行现价?\n")
+    COM_SOLD = max (float (PRICE) * 2200 * 2.5 / 10000, 5)
+    GUOHU_SOLD = float (PRICE) * 2200 * 0.01 / 1000
+    STAMP = float (PRICE) * 2200 * 0.05 / 100
+    Profit3 = float (PRICE) * 2200 - ORI - COM_INI - COM_SOLD - GUOHU_INI - GUOHU_SOLD - STAMP
+
+    COST1 = COM_INI + COM_SOLD + GUOHU_INI + GUOHU_SOLD + STAMP
+    print ("工商银行 total cost is: " + '%.2f'%COST1)
+
+    print ("工商银行 net profit is: " + '%.2f'%Profit3)
+
+
+    Profit = Profit1 + Profit2 + Profit3
 
     print("/n")
     print("合计"+ '%.2f'%Profit)
