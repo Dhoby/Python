@@ -1,7 +1,7 @@
 
 
 CURRENT_STOCKS = ["1电科网安","2同仁堂", "3工商银行"]
-print CURRENT_STOCKS
+print (CURRENT_STOCKS)
 
 CHOICE = input ("请选择查询的股票\n")
 
