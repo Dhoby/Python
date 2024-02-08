@@ -14,7 +14,7 @@ f = ((b - c) * a)/ (d - c) - a
 e = int(f)
 
 print(f"you should buy at least {e} more stocks\n")
-
+print(f"the cost is {e*c} \n")
 
 
 
