@@ -35,6 +35,7 @@ print('statsmodels: %s' % statsmodels.__version__)
 
 import sklearn
 #导入 Scikit-Learn 库。Scikit-Learn，也称 sklearn，是一个强大的开源机器学习库
-#提供了用于各种机器学习任务的工具和算法。它包括分类、回归、聚类、降维、模型选择、模型评估等各种机器学习任务的实现。Scikit-Learn 还包括用于数据预处理和特征工程的功能。
+#提供了用于各种机器学习任务的工具和算法。它包括分类、回归、聚类、降维、模型选择、模型评估等各种机器学习任务的实现。
+#Scikit-Learn 还包括用于数据预处理和特征工程的功能。
 print('sklearn: %s' % sklearn.__version__)
 
